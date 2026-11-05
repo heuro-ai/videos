@@ -1,0 +1,9 @@
+# Root-level secrets and temporary artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+__pycache__/
+*.zip
