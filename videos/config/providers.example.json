@@ -1,0 +1,9 @@
+{
+  "note": "Example configuration only. No account connection or paid entitlement is established by this file.",
+  "synthesia": {"connection_verified": false, "workspace_id": null, "avatar_id": null, "voice_id": null},
+  "google": {"connection_verified": false, "route": null, "model_id": null},
+  "descript": {"connection_verified": false, "project_id": null, "composition_id": null},
+  "open_models": {"runtime_verified": false, "checkpoint": null, "workflow_version": null},
+  "storage": {"private_destination": null},
+  "instructions": "Copy to private runtime configuration. Use provider-returned IDs and a secret store for credentials. Never put API keys or signed download URLs in this file."
+}

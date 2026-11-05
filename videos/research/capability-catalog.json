@@ -1,0 +1,832 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-11-05",
+  "scope": "Curated primary-source catalog covering the batch video-production lifecycle. Not an exhaustive internet index or a performance ranking.",
+  "privacy": "Generic public-safe research only; personal preferences and account readiness belong in private configuration.",
+  "licensing_note": "Code, weights, dependencies, sample data, footage, music and outputs may have different terms. This is a technical inventory, not legal clearance.",
+  "verification_note": "Repository URLs, detected licences and selected current commits were read from GitHub. Capabilities and constraints come from official READMEs/documentation. No new model benchmark or install performed by this research.",
+  "entries": [
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "kind": "hosted_service",
+      "categories": [
+        "avatar",
+        "voice",
+        "generation"
+      ],
+      "purpose": "Script/brief to presenter video with a verified own avatar and voice.",
+      "recommendation": "primary_avatar",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "Use existing connector's Syren workflow when available; an API key is a separate credential.",
+        "Verify exact own avatar and voice; persist returned conversation handles for revisions."
+      ],
+      "sources": [
+        "https://docs.synthesia.io/"
+      ]
+    },
+    {
+      "id": "google-flow",
+      "name": "Google Flow",
+      "kind": "hosted_service",
+      "categories": [
+        "generation",
+        "editing",
+        "reference_images"
+      ],
+      "purpose": "Create and edit short scenes in the Flow product.",
+      "recommendation": "primary_cinematic_candidate",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "Verify browser connection and account entitlement; do not assume a consumer subscription grants API access."
+      ],
+      "sources": [
+        "https://support.google.com/flow/"
+      ]
+    },
+    {
+      "id": "google-api",
+      "name": "Google video API",
+      "kind": "hosted_service",
+      "categories": [
+        "generation",
+        "video_understanding",
+        "editing"
+      ],
+      "purpose": "Programmatic video generation/editing route selected from current documentation.",
+      "recommendation": "primary_programmatic_candidate",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "On 2026-11-05 the official docs report Veo 3.1 Preview retired on 2026-10-22; select a currently supported route.",
+        "Model names, billing and entitlement must be verified at use time."
+      ],
+      "sources": [
+        "https://aistudio.google.com/docs/video"
+      ]
+    },
+    {
+      "id": "descript",
+      "name": "Descript / Underlord",
+      "kind": "hosted_service",
+      "categories": [
+        "editing",
+        "captions",
+        "audio",
+        "repurposing",
+        "interchange"
+      ],
+      "purpose": "Transcript-led edits, cleanup, captions, clips and editor handoff.",
+      "recommendation": "primary_editor",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "Connected tools may be exposed without proving account entitlements.",
+        "Reuse job and conversation IDs; do not start duplicate editing jobs while one is running."
+      ],
+      "sources": [
+        "https://www.descript.com/underlord"
+      ]
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "kind": "hosted_service",
+      "categories": [
+        "avatar",
+        "translation",
+        "lipsync"
+      ],
+      "purpose": "Alternative avatar and localization service.",
+      "recommendation": "optional_alternative",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "Evaluate against the existing avatar workflow before adding another subscription."
+      ],
+      "sources": [
+        "https://developers.heygen.com/"
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "kind": "hosted_service",
+      "categories": [
+        "generation",
+        "editing",
+        "characters"
+      ],
+      "purpose": "Alternative hosted generation and video workflows.",
+      "recommendation": "optional_alternative",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "No quality comparison run here; test a representative shot before choosing."
+      ],
+      "sources": [
+        "https://docs.dev.runwayml.com/"
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "kind": "hosted_service",
+      "categories": [
+        "voice",
+        "audio",
+        "dubbing",
+        "transcription"
+      ],
+      "purpose": "Optional own voice, dubbing and audio generation.",
+      "recommendation": "optional_voice_alternative",
+      "readiness": "account_readiness_stored_separately",
+      "code_license": {
+        "interpretation": "Proprietary service; inspect current provider terms."
+      },
+      "model_weights_license": "not_distributed_to_user",
+      "hardware": "Provider-managed; account entitlement, billing and limits must be verified.",
+      "cautions": [
+        "Requires appropriate own-voice setup and account rights; not automatically connected."
+      ],
+      "sources": [
+        "https://elevenlabs.io/docs/overview/intro"
+      ]
+    },
+    {
+      "id": "wan22",
+      "name": "Wan2.2",
+      "kind": "repository",
+      "categories": [
+        "generation",
+        "image_to_video",
+        "audio_driven_video"
+      ],
+      "purpose": "Text/image-to-video with smaller and larger checkpoints.",
+      "recommendation": "open_model_first_benchmark",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/Wan-Video/Wan2.2",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": "1ea34ff48f87168174e12956e200b1d908b1c5ff",
+      "last_upstream_push": "2026-09-21T06:16:22Z",
+      "code_license": {
+        "github_detected": "Apache-2.0",
+        "interpretation": "Apache-2.0 detected by GitHub."
+      },
+      "model_weights_license": "Official README declares repository models Apache-2.0; verify the exact downloaded model card and companion models.",
+      "hardware": "Official README's TI2V-5B example requires at least 24GB VRAM; A14B example at least 80GB. Those are workflow-specific examples, not a promise for every setting.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/Wan-Video/Wan2.2",
+        "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
+        "https://github.com/Wan-Video/Wan2.2/blob/main/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "ltx2",
+      "name": "LTX-2 family",
+      "kind": "repository",
+      "categories": [
+        "generation",
+        "audio_video",
+        "keyframes",
+        "lora"
+      ],
+      "purpose": "Controllable audio/video generation and editing pipelines.",
+      "recommendation": "open_model_second_benchmark",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/Lightricks/LTX-2",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": "4f521619ae0029e8fbb64d555030c2b121a33b4f",
+      "last_upstream_push": "2026-11-05T06:31:42Z",
+      "code_license": {
+        "github_detected": "Apache-2.0",
+        "interpretation": "Apache-2.0 code; model licences are explicitly separate."
+      },
+      "model_weights_license": "Current official README lists LTX-2.5 under LTX-2.x Community License and LTX-2.3 under LTX-2 Community License. Additional text-encoder terms may apply.",
+      "hardware": "VRAM varies by pipeline, checkpoint, quantization and offload. Do not infer a universal minimum from third-party estimates.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/Lightricks/LTX-2",
+        "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+        "https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x",
+        "https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2"
+      ]
+    },
+    {
+      "id": "hunyuan15",
+      "name": "HunyuanVideo-1.5",
+      "kind": "repository",
+      "categories": [
+        "generation",
+        "image_to_video",
+        "lora"
+      ],
+      "purpose": "Alternative video generation/fine-tuning stack.",
+      "recommendation": "open_model_alternative",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": "60783e704160023913bee78f0b47036d393d4dfa",
+      "last_upstream_push": "2026-04-10T06:14:59Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "Custom Tencent Hunyuan licence; do not label Apache/MIT."
+      },
+      "model_weights_license": "Tencent Hunyuan Community License and additional applicable component terms.",
+      "hardware": "Official README documents minimum 14GB GPU memory with model offloading enabled; offload affects throughput.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md",
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "musetalk",
+      "name": "MuseTalk",
+      "kind": "repository",
+      "categories": [
+        "lipsync",
+        "avatar"
+      ],
+      "purpose": "Synchronize authorized face footage with supplied audio.",
+      "recommendation": "avatar_experiment",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/TMElyralab/MuseTalk",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2025-09-26T05:44:17Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "Official README states MIT, though GitHub's classifier returns Other."
+      },
+      "model_weights_license": "README permits its trained model commercially, but each companion model keeps its own terms; example test data is noncommercial research only.",
+      "hardware": "README reports a 4GB RTX 3050 Ti fp16 test taking about 5 minutes for an 8-second video; this is a published test, not our benchmark.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/TMElyralab/MuseTalk",
+        "https://github.com/TMElyralab/MuseTalk/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "sadtalker",
+      "name": "SadTalker",
+      "kind": "repository",
+      "categories": [
+        "avatar",
+        "portrait_animation"
+      ],
+      "purpose": "Alternative portrait-driven talking-head research.",
+      "recommendation": "deprioritized_research",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/OpenTalker/SadTalker",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2024-06-26T12:51:53Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "GitHub metadata only; exact dependency and redistribution terms still require review."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Upstream last-push metadata was 2024; assess maintenance and exact component/model terms before adoption."
+      ],
+      "sources": [
+        "https://github.com/OpenTalker/SadTalker"
+      ]
+    },
+    {
+      "id": "f5tts",
+      "name": "F5-TTS",
+      "kind": "repository",
+      "categories": [
+        "voice"
+      ],
+      "purpose": "Voice-generation research option.",
+      "recommendation": "exclude_pretrained_from_commercial_default",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/SWivid/F5-TTS",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-03T15:05:10Z",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT code."
+      },
+      "model_weights_license": "Official README states pretrained models CC-BY-NC; these are not a default for commercial promotional videos.",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/SWivid/F5-TTS",
+        "https://github.com/SWivid/F5-TTS/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "fishspeech",
+      "name": "Fish Speech",
+      "kind": "repository",
+      "categories": [
+        "voice",
+        "audio"
+      ],
+      "purpose": "Expressive speech-generation alternative.",
+      "recommendation": "licence_review_before_selection",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/fishaudio/fish-speech",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-02T20:02:21Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "Current README states Fish Audio Community License."
+      },
+      "model_weights_license": "Community-licensed model family and S2-Pro Research License differ; choose the exact checkpoint deliberately.",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/fishaudio/fish-speech",
+        "https://github.com/fishaudio/fish-speech/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "gptsovits",
+      "name": "GPT-SoVITS",
+      "kind": "repository",
+      "categories": [
+        "voice"
+      ],
+      "purpose": "Voice synthesis research fallback.",
+      "recommendation": "optional_voice_research",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-10-31T15:56:56Z",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT code detected."
+      },
+      "model_weights_license": "Not established for all required pretrained components; review each model before use.",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/RVC-Boss/GPT-SoVITS"
+      ]
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "kind": "repository",
+      "categories": [
+        "workflow",
+        "generation",
+        "image_processing"
+      ],
+      "purpose": "Graph-based reproducible model execution.",
+      "recommendation": "open_model_workflow_host",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/Comfy-Org/ComfyUI",
+      "repository_verified": true,
+      "upstream_branch": "master",
+      "upstream_commit": "fb2b26fdac507b7da81277c7becaf54c5e46ac6b",
+      "last_upstream_push": "2026-11-05T09:39:54Z",
+      "code_license": {
+        "github_detected": "GPL-3.0",
+        "interpretation": "GPL-3.0 detected; custom nodes and checkpoints have separate terms."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Install only the nodes needed by a reviewed workflow; a graph is not a portable bundle of all model licences."
+      ],
+      "sources": [
+        "https://github.com/Comfy-Org/ComfyUI"
+      ]
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "kind": "repository",
+      "categories": [
+        "motion_graphics",
+        "maps",
+        "captions",
+        "templates",
+        "assembly"
+      ],
+      "purpose": "Precise programmatic graphics, branding, map/UI animation and aspect variants.",
+      "recommendation": "primary_programmatic_composition",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/remotion-dev/remotion",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-05T11:40:13Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "Custom Remotion licence with free/company tiers; inspect entity eligibility and current terms."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/remotion-dev/remotion",
+        "https://github.com/remotion-dev/remotion/blob/main/LICENSE.md",
+        "https://www.remotion.dev/docs/terms"
+      ]
+    },
+    {
+      "id": "remotion-skills",
+      "name": "Official Remotion Agent Skills",
+      "kind": "repository",
+      "categories": [
+        "skills",
+        "motion_graphics",
+        "maps",
+        "captions",
+        "rendering"
+      ],
+      "purpose": "Official agent instructions for Remotion creation, studio, rendering, maps, captions, docs, licensing and upgrades.",
+      "recommendation": "recommended_official_skill_source",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/remotion-dev/skills",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": "a2824c67f8b4585c294a8101db9f9f0ad3c643f8",
+      "last_upstream_push": "2026-11-05T08:20:43Z",
+      "code_license": {
+        "github_detected": "undetected",
+        "interpretation": "No GitHub-detected root licence. README identifies synchronized upstream Remotion package; resolve licensing before vendoring."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Upstream instructions researched, not installed or copied into this project.",
+        "Inspect and pin the upstream revision before installation; do not run an unreviewed moving installer automatically."
+      ],
+      "sources": [
+        "https://github.com/remotion-dev/skills",
+        "https://github.com/remotion-dev/skills/blob/main/README.md",
+        "https://www.remotion.dev/docs/ai/skills"
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "kind": "repository",
+      "categories": [
+        "encoding",
+        "assembly",
+        "audio",
+        "qa",
+        "captions"
+      ],
+      "purpose": "Probe, convert, mix, concatenate, measure and package media.",
+      "recommendation": "primary_media_backbone",
+      "readiness": "installed_current_environment_per_existing_validation",
+      "repository": "https://github.com/FFmpeg/FFmpeg",
+      "repository_verified": true,
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-05T11:16:23Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "LGPL/GPL obligations depend on enabled libraries and build flags; inspect the exact deployed build."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/FFmpeg/FFmpeg",
+        "https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md"
+      ]
+    },
+    {
+      "id": "whisperx",
+      "name": "WhisperX",
+      "kind": "repository",
+      "categories": [
+        "transcription",
+        "captions",
+        "alignment",
+        "diarization"
+      ],
+      "purpose": "Word-level transcript alignment and optional speaker diarization.",
+      "recommendation": "caption_alignment_candidate",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/m-bain/whisperX",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-10-22T14:53:44Z",
+      "code_license": {
+        "github_detected": "BSD-2-Clause",
+        "interpretation": "BSD-2-Clause detected for current repository; companion models and pyannote gating/terms differ."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Proofread code-switching, proper nouns and punctuation; diarization may require separately accepted model terms."
+      ],
+      "sources": [
+        "https://github.com/m-bain/whisperX"
+      ]
+    },
+    {
+      "id": "faster-whisper",
+      "name": "faster-whisper",
+      "kind": "repository",
+      "categories": [
+        "transcription",
+        "captions"
+      ],
+      "purpose": "Efficient Whisper inference with CPU/GPU options.",
+      "recommendation": "simple_transcription_candidate",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/SYSTRAN/faster-whisper",
+      "repository_verified": true,
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-02T11:19:13Z",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected; downloaded models retain applicable terms."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/SYSTRAN/faster-whisper"
+      ]
+    },
+    {
+      "id": "pyscenedetect",
+      "name": "PySceneDetect",
+      "kind": "repository",
+      "categories": [
+        "shot_detection",
+        "repurposing"
+      ],
+      "purpose": "Detect scene boundaries for editing and long-video segmentation.",
+      "recommendation": "optional_long_video_helper",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/Breakthrough/PySceneDetect",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-02T03:02:29Z",
+      "code_license": {
+        "github_detected": "BSD-3-Clause",
+        "interpretation": "BSD-3-Clause detected."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/Breakthrough/PySceneDetect"
+      ]
+    },
+    {
+      "id": "otio",
+      "name": "OpenTimelineIO",
+      "kind": "repository",
+      "categories": [
+        "interchange",
+        "timeline"
+      ],
+      "purpose": "Represent cuts and media references for editor interchange.",
+      "recommendation": "editor_handoff_candidate",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-10-31T01:15:54Z",
+      "code_license": {
+        "github_detected": "Apache-2.0",
+        "interpretation": "Apache-2.0 detected."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Adapters differ in feature fidelity; titles, effects and media must be tested in the target editor."
+      ],
+      "sources": [
+        "https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
+      ]
+    },
+    {
+      "id": "maplibre",
+      "name": "MapLibre GL JS",
+      "kind": "repository",
+      "categories": [
+        "maps",
+        "motion_graphics"
+      ],
+      "purpose": "Render precise geospatial overlays for programmatic scenes.",
+      "recommendation": "map_scene_candidate",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/maplibre/maplibre-gl-js",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-05T08:28:34Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "BSD-style main licence with bundled third-party notices; inspect LICENSE.txt."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Map imagery, tile services, fonts and parcel datasets have independent terms and attribution needs."
+      ],
+      "sources": [
+        "https://github.com/maplibre/maplibre-gl-js",
+        "https://github.com/maplibre/maplibre-gl-js/blob/main/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "kind": "repository",
+      "categories": [
+        "3d",
+        "compositing",
+        "motion_graphics"
+      ],
+      "purpose": "Advanced 3D terrain, camera moves and compositing.",
+      "recommendation": "optional_3d_production",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/blender/blender",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-05T11:30:49Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "GPL family; inspect official licensing for software versus output/assets."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/blender/blender",
+        "https://www.blender.org/about/license/"
+      ]
+    },
+    {
+      "id": "shotcut",
+      "name": "Shotcut",
+      "kind": "repository",
+      "categories": [
+        "editing",
+        "audio",
+        "color"
+      ],
+      "purpose": "Open desktop editor fallback for manual finishing.",
+      "recommendation": "open_editor_alternative",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/mltframework/shotcut",
+      "repository_verified": true,
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-04T02:15:29Z",
+      "code_license": {
+        "github_detected": "GPL-3.0",
+        "interpretation": "GPL-3.0 detected."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/mltframework/shotcut"
+      ]
+    },
+    {
+      "id": "vmaf",
+      "name": "VMAF",
+      "kind": "repository",
+      "categories": [
+        "qa",
+        "encoding"
+      ],
+      "purpose": "Reference-based quality metrics for comparing encodes.",
+      "recommendation": "encoding_qa_optional",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/Netflix/vmaf",
+      "repository_verified": true,
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-02T23:19:42Z",
+      "code_license": {
+        "github_detected": "NOASSERTION",
+        "interpretation": "BSD+Patent stated in official LICENSE."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "A high metric score does not prove good storytelling, lip-sync or accurate claims.",
+        "Requires compatible reference content and runtime support."
+      ],
+      "sources": [
+        "https://github.com/Netflix/vmaf",
+        "https://github.com/Netflix/vmaf/blob/master/LICENSE"
+      ]
+    },
+    {
+      "id": "rembg",
+      "name": "rembg",
+      "kind": "repository",
+      "categories": [
+        "image_processing",
+        "background_removal"
+      ],
+      "purpose": "Optional background cutouts for title cards and compositing.",
+      "recommendation": "optional_image_helper",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/danielgatis/rembg",
+      "repository_verified": true,
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-02T02:34:31Z",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected; downloaded segmentation models need separate review."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [],
+      "sources": [
+        "https://github.com/danielgatis/rembg"
+      ]
+    },
+    {
+      "id": "rclone",
+      "name": "rclone",
+      "kind": "repository",
+      "categories": [
+        "storage",
+        "backup",
+        "checksums"
+      ],
+      "purpose": "Move media to Drive/S3-compatible storage and compare file checksums.",
+      "recommendation": "optional_cloud_media_transport",
+      "readiness": "researched_not_installed",
+      "repository": "https://github.com/rclone/rclone",
+      "repository_verified": true,
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-05T12:04:59Z",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected."
+      },
+      "model_weights_license": "not_applicable_or_not_reviewed",
+      "hardware": "No quantitative requirement established in this research; measure the chosen workflow.",
+      "cautions": [
+        "Configure the user's chosen remote securely; never commit rclone tokens or configuration secrets."
+      ],
+      "sources": [
+        "https://github.com/rclone/rclone",
+        "https://rclone.org/overview/"
+      ]
+    }
+  ]
+}

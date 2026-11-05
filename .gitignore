@@ -1,4 +1,4 @@
-# Root-level secrets and temporary artifacts
+# Secrets and private runtime material
 .env
 .env.*
 !.env.example
@@ -7,3 +7,14 @@
 credentials*.json
 __pycache__/
 *.zip
+/videos/context/
+/videos/config/integrations.json
+/videos/projects/
+/videos/assets/
+/videos/exports/
+**/generated/
+/videos/vendor/
+*.mp4
+*.mov
+*.wav
+*.mp3

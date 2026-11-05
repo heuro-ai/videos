@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "title": "One message per video",
+  "track": "personal",
+  "status": "example",
+  "audience": "New video creators",
+  "goal": "Teach one practical production principle",
+  "language": "English",
+  "platforms": [
+    "short-form video"
+  ],
+  "duration_seconds": 30,
+  "aspect_ratio": "9:16",
+  "message": "Choose one message and make every shot support it",
+  "cta": "Write your next video’s message in one sentence",
+  "script": "Choose one message before making a video. Match every shot to that message. End with one clear next step. Try writing your next video’s message in a single sentence.",
+  "approved_claims": [],
+  "references": [],
+  "avatar_id": null,
+  "voice_id": null,
+  "budget": null,
+  "open_questions": [
+    "Select a verified identity and own voice before generation",
+    "Choose a style reference and generation budget"
+  ]
+}

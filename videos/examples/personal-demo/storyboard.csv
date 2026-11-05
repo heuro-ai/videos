@@ -1,0 +1,4 @@
+shot_id,start_seconds,duration_seconds,kind,narration,visual,on_screen_text
+1,0,10,speaking,Choose one message before making a video.,"Own presenter, identity to verify.",One message
+2,10,10,motion_graphic,Match every shot to that message.,Three neutral storyboard cards align around a central message.,Every shot supports it
+3,20,10,speaking,End with one clear next step. Try writing your next video’s message in a single sentence.,"Own presenter closes, identity to verify.",Write one sentence

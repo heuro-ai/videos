@@ -1,0 +1,29 @@
+{
+  "title": "",
+  "track": "heuro_or_personal",
+  "status": "draft",
+  "audience": "",
+  "goal": "",
+  "language": "",
+  "platforms": [],
+  "duration_seconds": 30,
+  "aspect_ratio": "9:16",
+  "message": "",
+  "cta": "",
+  "approved_claims": [],
+  "references": [],
+  "avatar_id": null,
+  "voice_id": null,
+  "budget": {
+    "currency": "INR",
+    "max_generation_spend": null
+  },
+  "deliverables": [
+    "master.mp4",
+    "reel.mp4",
+    "captions.srt",
+    "thumbnail",
+    "asset-manifest.csv"
+  ],
+  "open_questions": []
+}
