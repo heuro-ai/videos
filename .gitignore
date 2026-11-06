@@ -18,3 +18,9 @@ __pycache__/
 *.mov
 *.wav
 *.mp3
+
+# Reproducible source and lockfiles are tracked; caches/deps/renders stay local
+node_modules/
+/videos/motion-starter/out/
+/videos/motion-starter/.cache/
+/videos/motion-starter/.remotion/

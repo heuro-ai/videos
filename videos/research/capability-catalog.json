@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
-  "research_date": "2026-11-05",
-  "scope": "Curated primary-source catalog covering the batch video-production lifecycle. Not an exhaustive internet index or a performance ranking.",
+  "schema_version": 2,
+  "research_date": "2026-11-06",
+  "scope": "Curated batch-video lifecycle and premium product-launch production catalog. 29 baseline entries plus 16 capture, spatial, motion, skill and finishing additions. Not an exhaustive index or an output-quality guarantee.",
   "privacy": "Generic public-safe research only; personal preferences and account readiness belong in private configuration.",
   "licensing_note": "Code, weights, dependencies, sample data, footage, music and outputs may have different terms. This is a technical inventory, not legal clearance.",
   "verification_note": "Repository URLs, detected licences and selected current commits were read from GitHub. Capabilities and constraints come from official READMEs/documentation. No new model benchmark or install performed by this research.",
@@ -470,7 +470,16 @@
         "https://github.com/remotion-dev/remotion",
         "https://github.com/remotion-dev/remotion/blob/main/LICENSE.md",
         "https://www.remotion.dev/docs/terms"
-      ]
+      ],
+      "local_prototype_verification": {
+        "version": "4.0.541",
+        "landscape_video": "3-second smoke render passed",
+        "portrait": "still inspected; full export not tested",
+        "real_media_slots": "neutral supplied-media fixture passed",
+        "production_missing_media_guard": "passed",
+        "source": "motion-starter/README.md",
+        "note": "This records a local prototype check, not an installation guarantee for a new checkout."
+      }
     },
     {
       "id": "remotion-skills",
@@ -827,6 +836,495 @@
         "https://github.com/rclone/rclone",
         "https://rclone.org/overview/"
       ]
+    },
+    {
+      "id": "playwright",
+      "name": "microsoft/playwright",
+      "kind": "repository",
+      "repository": "https://github.com/microsoft/playwright",
+      "repository_verified": true,
+      "tasks": [
+        "real_ui_capture",
+        "repeatable_product_demo"
+      ],
+      "use_in_launch_film": "Script actual product interactions in a controlled browser, capture real UI and retain repeatable action scripts.",
+      "priority": "core_capture",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "Apache-2.0",
+        "interpretation": "Apache-2.0 detected."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "main",
+      "upstream_commit": "58d69dcc392af3a6994eab0323dc2e883f05f396",
+      "last_upstream_push": "2026-11-06T02:55:46Z",
+      "notes": [
+        "Configure viewport and recording size explicitly; default recording may be scaled down.",
+        "Use a staging/demo account with authorized test data. Finalize the browser context so its video is saved.",
+        "Video recording is evidence of UI behaviour; do not pass an interactive mockup off as a shipped feature."
+      ],
+      "sources": [
+        "https://github.com/microsoft/playwright",
+        "https://playwright.dev/docs/videos"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "obs-studio",
+      "name": "obsproject/obs-studio",
+      "kind": "repository",
+      "repository": "https://github.com/obsproject/obs-studio",
+      "repository_verified": true,
+      "tasks": [
+        "real_ui_capture",
+        "founder_capture",
+        "audio_capture"
+      ],
+      "use_in_launch_film": "Record real desktop demos or a camera+screen session when browser-only capture is insufficient.",
+      "priority": "capture_alternative",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "GPL-2.0",
+        "interpretation": "GPL-2.0 family detected; inspect exact release and linked plugin terms."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-06T00:42:53Z",
+      "notes": [
+        "Requires a working desktop, capture permissions and suitable encoder; GUI capture does not become automated just because software is listed.",
+        "Choose explicit recording dimensions/frame rate and keep an isolated screen/window."
+      ],
+      "sources": [
+        "https://github.com/obsproject/obs-studio",
+        "https://obsproject.com/kb/quick-start-guide"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "screen-studio",
+      "name": "Screen Studio",
+      "kind": "desktop_product",
+      "tasks": [
+        "real_ui_capture",
+        "cursor_polish",
+        "demo_editing"
+      ],
+      "use_in_launch_film": "Optional rapid Mac-based demo capture with cursor/zoom/framing polish.",
+      "priority": "mac_capture_alternative",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "interpretation": "Proprietary desktop software; verify current licence/edition and user entitlement before adoption."
+      },
+      "notes": [
+        "Official site is a macOS product; it is not the default for a Linux cloud runtime.",
+        "No supported remote API/CLI automation was established in this research. Import its exported recording into the common timeline."
+      ],
+      "sources": [
+        "https://screen.studio/"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "threejs",
+      "name": "mrdoob/three.js",
+      "kind": "repository",
+      "repository": "https://github.com/mrdoob/three.js",
+      "repository_verified": true,
+      "tasks": [
+        "spatial_ui",
+        "3d_compositing",
+        "camera"
+      ],
+      "use_in_launch_film": "Place authentic demo recordings/screenshots on 3D panels, add restrained camera depth and lighting.",
+      "priority": "optional_spatial_core",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "dev",
+      "upstream_commit": "0d6115556e60cb940b3063307549ea95a2dfe82b",
+      "last_upstream_push": "2026-11-06T00:52:19Z",
+      "notes": [
+        "The observed upstream pin is on dev, not a selected production release. Use compatible stable package versions for installation.",
+        "Do not confuse perspective treatment of real screen footage with an invented product UI."
+      ],
+      "sources": [
+        "https://github.com/mrdoob/three.js",
+        "https://threejs.org/docs/"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "react-three-fiber",
+      "name": "pmndrs/react-three-fiber",
+      "kind": "repository",
+      "repository": "https://github.com/pmndrs/react-three-fiber",
+      "repository_verified": true,
+      "tasks": [
+        "spatial_ui",
+        "react_3d"
+      ],
+      "use_in_launch_film": "Compose Three.js scenes in React and integrate them into the existing Remotion timeline.",
+      "priority": "optional_spatial_core",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "master",
+      "upstream_commit": "d74622ea8ed717f7212d7e19d65ff3e325508389",
+      "last_upstream_push": "2026-10-21T15:24:39Z",
+      "notes": [
+        "Pin compatible React, Three, R3F and @remotion/three versions.",
+        "For export, drive transforms from the composition frame/time rather than a free-running render clock."
+      ],
+      "sources": [
+        "https://github.com/pmndrs/react-three-fiber",
+        "https://r3f.docs.pmnd.rs/getting-started/introduction",
+        "https://www.remotion.dev/docs/three"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "drei",
+      "name": "pmndrs/drei",
+      "kind": "repository",
+      "repository": "https://github.com/pmndrs/drei",
+      "repository_verified": true,
+      "tasks": [
+        "spatial_ui",
+        "scene_helpers"
+      ],
+      "use_in_launch_film": "Use focused camera/environment/material helpers instead of hand-building every 3D primitive.",
+      "priority": "optional_spatial_helper",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "master",
+      "upstream_commit": "bf6f4addf47467d3885de272d94ca5127f6ef68f",
+      "last_upstream_push": "2026-10-21T09:19:21Z",
+      "notes": [
+        "Helper libraries do not license downloaded HDRIs, fonts or glTF assets.",
+        "Include only helpers needed by the actual shot; ensure they work in offline/frame-based rendering."
+      ],
+      "sources": [
+        "https://github.com/pmndrs/drei",
+        "https://drei.docs.pmnd.rs/"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "deck-gl",
+      "name": "visgl/deck.gl",
+      "kind": "repository",
+      "repository": "https://github.com/visgl/deck.gl",
+      "repository_verified": true,
+      "tasks": [
+        "geospatial_layers",
+        "data_storytelling"
+      ],
+      "use_in_launch_film": "Render precise parcel/polygon/data overlays and animate the evidence behind a real product decision.",
+      "priority": "map_data_optional",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "master",
+      "upstream_commit": "12496f0a9eae1dd277c4b2f079a18148db50b384",
+      "last_upstream_push": "2026-11-05T22:05:43Z",
+      "notes": [
+        "Add to the existing MapLibre path when its data layers are needed; do not install every mapping stack.",
+        "Tile imagery, fonts and datasets have separate attribution/licence requirements."
+      ],
+      "sources": [
+        "https://github.com/visgl/deck.gl",
+        "https://deck.gl/docs"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "cesiumjs",
+      "name": "CesiumGS/cesium",
+      "kind": "repository",
+      "repository": "https://github.com/CesiumGS/cesium",
+      "repository_verified": true,
+      "tasks": [
+        "terrain",
+        "globe",
+        "geospatial_3d"
+      ],
+      "use_in_launch_film": "Use georeferenced terrain/globe/3D-tile scenes when a land/infrastructure story needs geographic depth.",
+      "priority": "advanced_geo_optional",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "Apache-2.0",
+        "interpretation": "Apache-2.0 detected for CesiumJS code."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "main",
+      "upstream_commit": "9edc189fbde2df1fa249dbfc030a63db901712c5",
+      "last_upstream_push": "2026-11-06T02:29:26Z",
+      "notes": [
+        "Cesium ion, terrain, photorealistic tiles and third-party content are separate services/content with their own terms and possible costs.",
+        "Only use measured/sourced geography as evidence; generic generated terrain is illustrative."
+      ],
+      "sources": [
+        "https://github.com/CesiumGS/cesium",
+        "https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "motion",
+      "name": "motiondivision/motion",
+      "kind": "repository",
+      "repository": "https://github.com/motiondivision/motion",
+      "repository_verified": true,
+      "tasks": [
+        "minimal_motion_graphics",
+        "ui_choreography",
+        "svg"
+      ],
+      "use_in_launch_film": "Develop restrained UI transitions, typography and reusable motion tokens in React/JS.",
+      "priority": "optional_web_motion_library",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected for Motion; optional Motion+ content/services are separate."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "main",
+      "upstream_commit": "67d34f67f4c39c6071bab1ab36e8753ebe012ad3",
+      "last_upstream_push": "2026-11-05T21:09:07Z",
+      "notes": [
+        "In an exported video, use frame-controlled animation or a reviewed seek adapter; ordinary live animations can render nondeterministically.",
+        "A simpler Remotion spring/interpolation can be preferable for fixed video shots."
+      ],
+      "sources": [
+        "https://github.com/motiondivision/motion",
+        "https://motion.dev/docs/react"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "gsap",
+      "name": "greensock/GSAP",
+      "kind": "repository",
+      "repository": "https://github.com/greensock/GSAP",
+      "repository_verified": true,
+      "tasks": [
+        "timeline_choreography",
+        "svg",
+        "typography"
+      ],
+      "use_in_launch_film": "Build precise complex staggered/SVG/typographic animation when it saves authoring effort.",
+      "priority": "advanced_motion_optional",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "not_detected",
+        "interpretation": "Custom GSAP Standard License, not MIT; current official terms cover commercial use at no charge but restrict competing visual animation builders."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "master",
+      "upstream_commit": "5e6c35ff8eedea12d4f229129def635277d8b0f2",
+      "last_upstream_push": "2026-11-04T00:56:41Z",
+      "notes": [
+        "Read the exact licence if turning the project into a no-code animation editor.",
+        "For rendering, pause/seek the timeline to the composition time; avoid wall-clock-driven playback."
+      ],
+      "sources": [
+        "https://github.com/greensock/GSAP",
+        "https://gsap.com/standard-license/",
+        "https://gsap.com/pricing/"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "motion-ai-kit",
+      "name": "motiondivision/ai-kit",
+      "kind": "repository",
+      "repository": "https://github.com/motiondivision/ai-kit",
+      "repository_verified": true,
+      "tasks": [
+        "agent_skill",
+        "motion_docs",
+        "animation_guidance"
+      ],
+      "use_in_launch_film": "Official Motion skill and docs MCP for generating/documenting motion choices; optional paid audits/examples.",
+      "priority": "official_skill_candidate",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "not_detected",
+        "interpretation": "No GitHub-detected root licence. Motion's official library README states the /motion skill is MIT; review files/components before vendoring."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-04T06:55:44Z",
+      "notes": [
+        "Official current AI Kit README documents npx motion-ai support for Codex and other clients; no installer was run here.",
+        "Free documentation MCP is distinct from paid Motion+ audits and example/component source.",
+        "Review the installer and pin a version before changing agent configuration."
+      ],
+      "sources": [
+        "https://github.com/motiondivision/ai-kit",
+        "https://github.com/motiondivision/motion/blob/main/README.md",
+        "https://github.com/motiondivision/ai-kit/blob/main/README.md"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "theatre-js",
+      "name": "theatre-js/theatre",
+      "kind": "repository",
+      "repository": "https://github.com/theatre-js/theatre",
+      "repository_verified": true,
+      "tasks": [
+        "visual_keyframing",
+        "3d_choreography"
+      ],
+      "use_in_launch_film": "Optional visual keyframe authoring for a specialist spatial sequence.",
+      "priority": "deprioritized_experiment",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "Apache-2.0",
+        "interpretation": "README distinguishes Apache-2.0 core from AGPL-3.0 studio; repository-wide metadata alone is insufficient."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2024-08-14T13:20:18Z",
+      "notes": [
+        "Public last-push metadata was 2024-08-14; README says development moved temporarily to a private repository. Assess maintenance before adoption.",
+        "Not needed for a small deterministic launch-film core."
+      ],
+      "sources": [
+        "https://github.com/theatre-js/theatre",
+        "https://github.com/theatre-js/theatre/blob/main/README.md"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "lottie-web",
+      "name": "airbnb/lottie-web",
+      "kind": "repository",
+      "repository": "https://github.com/airbnb/lottie-web",
+      "repository_verified": true,
+      "tasks": [
+        "vector_motion",
+        "aftereffects_interchange"
+      ],
+      "use_in_launch_film": "Play suitable exported vector motion assets in browser/composition workflows.",
+      "priority": "vector_asset_optional",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected for lottie-web runtime; animation source, fonts and export tooling keep their own terms."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "master",
+      "upstream_commit": null,
+      "last_upstream_push": "2025-09-01T09:01:31Z",
+      "notes": [
+        "Not every After Effects effect survives vector export; test the actual exported animation.",
+        "Preserve editable source when committing to a designer-to-code handoff."
+      ],
+      "sources": [
+        "https://github.com/airbnb/lottie-web"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "remotion-three-template",
+      "name": "remotion-dev/template-three",
+      "kind": "repository",
+      "repository": "https://github.com/remotion-dev/template-three",
+      "repository_verified": true,
+      "tasks": [
+        "starter_template",
+        "spatial_ui",
+        "demo_as_texture"
+      ],
+      "use_in_launch_film": "Official minimal starting example for a video-textured 3D device/panel in Remotion + React Three Fiber.",
+      "priority": "starter_reference",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "github_detected": "MIT",
+        "interpretation": "MIT detected for template repository; Remotion dependencies retain their separate licensing."
+      },
+      "model_weights_license": "not_applicable_to_library; content, example assets and services may have separate terms",
+      "upstream_branch": "main",
+      "upstream_commit": null,
+      "last_upstream_push": "2026-11-02T08:51:02Z",
+      "notes": [
+        "Reference and adapt the minimal example after review; no source has been copied or installed by this research.",
+        "The existing Remotion catalog entry covers core licensing; this is an incremental starter repository."
+      ],
+      "sources": [
+        "https://github.com/remotion-dev/template-three",
+        "https://www.remotion.dev/docs/three"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve / Fairlight / Fusion",
+      "kind": "desktop_product",
+      "tasks": [
+        "finishing",
+        "color",
+        "sound_mix",
+        "compositing"
+      ],
+      "use_in_launch_film": "Optional professional final conform, grade, dialogue/music/FX balance and advanced compositing.",
+      "priority": "advanced_finishing_optional",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "interpretation": "Proprietary desktop software; verify current licence/edition and user entitlement before adoption."
+      },
+      "notes": [
+        "Free and Studio editions differ; verify exact required feature and codec support.",
+        "No Resolve installation, licence check or automation integration was performed. Exchange rendered masters/stems and a tested timeline format."
+      ],
+      "sources": [
+        "https://www.blackmagicdesign.com/products/davinciresolve"
+      ],
+      "catalog_group": "launch_film_extension"
+    },
+    {
+      "id": "after-effects",
+      "name": "Adobe After Effects",
+      "kind": "desktop_product",
+      "tasks": [
+        "bespoke_motion_graphics",
+        "compositing",
+        "designer_handoff"
+      ],
+      "use_in_launch_film": "Optional bespoke designer-led typography, compositing and motion-design finishing.",
+      "priority": "specialist_motion_optional",
+      "readiness": "researched_not_installed_by_this_task",
+      "code_license": {
+        "interpretation": "Proprietary desktop software; verify current licence/edition and user entitlement before adoption."
+      },
+      "notes": [
+        "Verify Adobe entitlement, plugins, fonts and source-asset rights.",
+        "No After Effects installation or automation integration was performed. Keep dependency/plugin inventory with the project."
+      ],
+      "sources": [
+        "https://www.adobe.com/products/aftereffects.html"
+      ],
+      "catalog_group": "launch_film_extension"
     }
-  ]
+  ],
+  "original_research_date": "2026-11-05",
+  "entry_count": 45
 }

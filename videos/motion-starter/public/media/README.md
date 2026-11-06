@@ -1,0 +1,1 @@
+Place authorized product screen recordings, founder clips and optional narration here. Media is ignored by Git. Use paths such as media/product.mp4 in your private props file. No footage is bundled with this starter.

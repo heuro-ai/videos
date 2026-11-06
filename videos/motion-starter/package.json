@@ -1,0 +1,19 @@
+{
+  "name": "launch-motion-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Configurable startup launch-film compositions with real footage slots",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx --no-open",
+    "render": "remotion render src/index.jsx LaunchLandscape out/launch-landscape.mp4",
+    "render:vertical": "remotion render src/index.jsx LaunchVertical out/launch-vertical.mp4",
+    "compositions": "remotion compositions src/index.jsx"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "@remotion/media": "4.0.541",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.541"
+  }
+}

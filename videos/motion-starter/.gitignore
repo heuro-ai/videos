@@ -1,0 +1,6 @@
+node_modules/
+out/
+.remotion/
+public/media/*
+!public/media/README.md
+props.local.json

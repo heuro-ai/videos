@@ -1,6 +1,6 @@
 # Video production research
 
-Researched **2026-11-05** from publisher repositories and official documentation. The [machine-readable catalog](capability-catalog.json) contains **29 tools, services and skill sources**, including five pinned upstream revisions. This is a curated lifecycle inventory, not a claim to index every tool or to rank untested models by quality. It contains generic research only; account readiness and personal context belong in private configuration.
+Researched **2026-11-05** from publisher repositories and official documentation. The [machine-readable catalog](capability-catalog.json) now contains **45 tools, services and skill sources**: 29 baseline entries plus 16 launch-film additions. See [the launch-film extension](launch-film-stack.md) and [acquired skills](skill-acquisition.md) for the latest setup status and additional revision pins. This is a curated lifecycle inventory, not a claim to index every tool or to rank untested models by quality. It contains generic research only; account readiness and personal context belong in private configuration.
 
 ## Recommended working stack
 

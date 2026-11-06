@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "checked": "2026-11-06",
+  "purpose": "Pinned first-party agent guidance for repeatable polished video creation",
+  "sources": [
+    {
+      "owner": "remotion-dev",
+      "repository": "https://github.com/remotion-dev/skills",
+      "official_documentation": "https://www.remotion.dev/docs/ai/skills",
+      "commit": "a2824c67f8b4585c294a8101db9f9f0ad3c643f8",
+      "commit_date": "2026-11-05",
+      "package_version": "4.0.541",
+      "checkout_path": "vendor/agent-skills/remotion-skills",
+      "checkout_state": "detached_HEAD",
+      "acquisition": "git clone then checkout exact commit; no package installation or lifecycle scripts executed",
+      "readiness": "local_skill_checkout_ready; not globally registered and not proof of a working Remotion runtime",
+      "redistribution": "upstream source remains in ignored vendor directory; only this manifest and original summary are intended for tracking",
+      "skill_repository_license": "No LICENSE/COPYING/NOTICE file found in this pinned standalone repository; do not infer a redistribution grant",
+      "software_license": "Remotion is source-available under its own licence; eligibility/terms must be checked for the intended user or organization",
+      "software_license_sources": [
+        "https://www.remotion.dev/docs/license",
+        "https://www.remotion.dev/docs/license/faq",
+        "https://www.remotion.dev/docs/terms"
+      ],
+      "skills": [
+        {
+          "name": "remotion-best-practices",
+          "path": "skills/remotion-best-practices/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-captions",
+          "path": "skills/remotion-captions/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-create",
+          "path": "skills/remotion-create/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-docs",
+          "path": "skills/remotion-docs/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": false
+        },
+        {
+          "name": "remotion-interactivity",
+          "path": "skills/remotion-interactivity/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": false
+        },
+        {
+          "name": "remotion-license",
+          "path": "skills/remotion-license/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-maps",
+          "path": "skills/remotion-maps/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-markup",
+          "path": "skills/remotion-markup/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-multimedia",
+          "path": "skills/remotion-multimedia/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": false
+        },
+        {
+          "name": "remotion-render",
+          "path": "skills/remotion-render/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": true
+        },
+        {
+          "name": "remotion-saas",
+          "path": "skills/remotion-saas/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": false
+        },
+        {
+          "name": "remotion-studio",
+          "path": "skills/remotion-studio/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": false
+        },
+        {
+          "name": "remotion-upgrade",
+          "path": "skills/remotion-upgrade/SKILL.md",
+          "version": "4.0.541",
+          "reviewed": false
+        }
+      ],
+      "reviewed_files": [
+        {
+          "path": "README.md",
+          "sha256": "79241f8ff6e82d0e9e9976cac579ed86b05d3e63527ce7493b5081a8c38a0f2e",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/README.md"
+        },
+        {
+          "path": "package.json",
+          "sha256": "2c7e697140bb910856ac4401cdae7f284ad89846b9a1f9191d3e3503723d73a6",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/package.json"
+        },
+        {
+          "path": "skills/remotion-best-practices/SKILL.md",
+          "sha256": "b9712d028fe9c3f8d08dbdc08d17e33d4f9b26da44d945ce84995e4011b36096",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-best-practices/SKILL.md"
+        },
+        {
+          "path": "skills/remotion-create/SKILL.md",
+          "sha256": "433db214a47b315834ca96960dcc746587a10fcbe49da15a3e3f17ca8a8f03f6",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-create/SKILL.md"
+        },
+        {
+          "path": "skills/remotion-create/video-layout.md",
+          "sha256": "7ad94c22e3ad87671292ebb9b22f234c544d6c7fed13f8cb112b84b0f7077d4c",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-create/video-layout.md"
+        },
+        {
+          "path": "skills/remotion-markup/SKILL.md",
+          "sha256": "30f26d8cf63dbf1c3b271d28468439858f232b7aed316f533b6ab28ef4fc3be4",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/SKILL.md"
+        },
+        {
+          "path": "skills/remotion-markup/compositions.md",
+          "sha256": "3d1fcd25ebc11726b216e5e419d950469c3c6416edf45f69630bd11c8179f8dd",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/compositions.md"
+        },
+        {
+          "path": "skills/remotion-markup/timing.md",
+          "sha256": "48047e758b96aea519916479ede62b832bf51f982924978e091c37f569ab4bac",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/timing.md"
+        },
+        {
+          "path": "skills/remotion-markup/sequencing.md",
+          "sha256": "f53680a3ec4b754501ce37516387666e1b3df3c5714d266154b274caea4236a4",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/sequencing.md"
+        },
+        {
+          "path": "skills/remotion-markup/multi-scene-video.md",
+          "sha256": "27c3b31a3446f7fb1844734e88b837e2e4f67fadc3b0f14f9043b30c09836557",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/multi-scene-video.md"
+        },
+        {
+          "path": "skills/remotion-markup/transitions.md",
+          "sha256": "83b8b511044ef175244a4e9e81f66bd3f5062cf9cecacd30ae88ac17eda40b82",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/transitions.md"
+        },
+        {
+          "path": "skills/remotion-markup/motion-blur.md",
+          "sha256": "bc7559c9d0e56dffef72dcc4fb2d89d42c587ec2204ac21d33ae0c583d59632d",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-markup/motion-blur.md"
+        },
+        {
+          "path": "skills/remotion-render/SKILL.md",
+          "sha256": "abf5f10aebc73588c119b07e89935842dd6a101b414543fa7f6163c2850aff9c",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-render/SKILL.md"
+        },
+        {
+          "path": "skills/remotion-maps/SKILL.md",
+          "sha256": "8396359e00263747856c0a9bcc5c0a8bf75017a4d5e60329b9ed7fcff0734d00",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-maps/SKILL.md"
+        },
+        {
+          "path": "skills/remotion-maps/techniques/static-map/TECHNIQUE.md",
+          "sha256": "5c1dd66fe41a476fb54474f29388b2caea6d8f73c81c585a761dace5aa8d8647",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-maps/techniques/static-map/TECHNIQUE.md"
+        },
+        {
+          "path": "skills/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+          "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-maps/techniques/maplibre/TECHNIQUE.md"
+        },
+        {
+          "path": "skills/remotion-captions/SKILL.md",
+          "sha256": "2c8e945a93cbc644fe297d5d0e94c7cebdc76075ebe5a7fc39d25e999fa74eeb",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-captions/SKILL.md"
+        },
+        {
+          "path": "skills/remotion-captions/display-captions.md",
+          "sha256": "12676a7250f33f126a8ccb0a2b28de22f5ccc9cad0d5baab53a736e205690a17",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-captions/display-captions.md"
+        },
+        {
+          "path": "skills/remotion-captions/import-srt-captions.md",
+          "sha256": "e328b6845babd08ed2a747f82c59796fd1d7b85140c8eb4d36e41639779473ad",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-captions/import-srt-captions.md"
+        },
+        {
+          "path": "skills/remotion-license/SKILL.md",
+          "sha256": "fbc19f61ad15b7baa03039b16ebd19e4b1be38d98b00456cc11c4bacfb787f49",
+          "source_url": "https://github.com/remotion-dev/skills/blob/a2824c67f8b4585c294a8101db9f9f0ad3c643f8/skills/remotion-license/SKILL.md"
+        }
+      ]
+    },
+    {
+      "owner": "motiondivision",
+      "repository": "https://github.com/motiondivision/ai-kit",
+      "official_documentation": "https://motion.dev/docs/ai-kit",
+      "commit": "1e424943582cbbdb6e3f410687e39f96451447bb",
+      "commit_date": "2026-10-26",
+      "installer_package_version": "14.2.0",
+      "version_note": "Installer package version, not a claim about the installed Motion runtime",
+      "checkout_path": "vendor/agent-skills/motion-ai-kit",
+      "checkout_state": "detached_HEAD",
+      "acquisition": "git clone then checkout exact commit; npx installer not executed",
+      "readiness": "local_motion_SKILL_and_best_practices_ready; hosted MCP servers not configured or tested; no global agent registration",
+      "scope": "Web/UI animation guidance; do not replace deterministic Remotion video timing with browser-timed Motion/CSS animations",
+      "license": "MIT declared in packages/motion-ai/package.json and packages/motion-ai/README.md; no standalone LICENSE file found in pinned tree",
+      "redistribution": "Upstream files remain ignored; only this metadata and original guide tracked",
+      "skills": [
+        {
+          "name": "motion",
+          "path": "plugins/motion/skills/motion/SKILL.md",
+          "reviewed": true,
+          "version": null
+        }
+      ],
+      "setup_available_not_performed": {
+        "installer": "npx motion-ai",
+        "free_mcp": "https://mcp.motion.dev",
+        "optional_plus_mcp": "https://mcp.motion.dev/plus",
+        "codex_skill_location": ".agents/skills/",
+        "codex_mcp_config": ".codex/config.toml",
+        "requires_node": ">=18",
+        "paid_access": "Motion+ source/audits/editor need separate OAuth/entitlement; not verified"
+      },
+      "reviewed_files": [
+        {
+          "path": "README.md",
+          "sha256": "5e6347889383a68cef80885d8941827f566cd055c068cd512dc0ea2f9c6e25c3",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/README.md"
+        },
+        {
+          "path": "package.json",
+          "sha256": "070ffd2894bda3a1328dd84d9d9d40be91d5b13a7f3bbfddfadae8c606353a43",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/package.json"
+        },
+        {
+          "path": "packages/motion-ai/package.json",
+          "sha256": "a9441186eb244a32029abe0d35f1cd6a740309fd73faec21dd3c8114d1579bfb",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/packages/motion-ai/package.json"
+        },
+        {
+          "path": "packages/motion-ai/README.md",
+          "sha256": "20b9015c3f44a4614d4ac12fe3db5555abe5116b83065baf7ddbc8684215662a",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/packages/motion-ai/README.md"
+        },
+        {
+          "path": "plugins/motion/README.md",
+          "sha256": "6e0dc2fe2237922ad8c70ad52ea659a7f5e29318ad49be5b093ab3efee62686a",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/README.md"
+        },
+        {
+          "path": "plugins/motion/skills/motion/SKILL.md",
+          "sha256": "69f9fe4de5bd0618dd3578925e0f21df5ebb5161e2665ed2aa1ed55edef3be0f",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/skills/motion/SKILL.md"
+        },
+        {
+          "path": "plugins/motion/skills/motion/best-practices/index.md",
+          "sha256": "78fccd242981414e395988b4965ae390af79edfbdf3d0f36b6cf8650733a0da9",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/skills/motion/best-practices/index.md"
+        },
+        {
+          "path": "plugins/motion/skills/motion/best-practices/css-or-motion.md",
+          "sha256": "7b5fa2e184238a0532d2b010629474e99dec36a5a35c442c12f96db5aa25682c",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/skills/motion/best-practices/css-or-motion.md"
+        },
+        {
+          "path": "plugins/motion/skills/motion/best-practices/react.md",
+          "sha256": "e09d96029eb64313f6887949805447807d300a36d13138a56b22b3525f2cc7c7",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/skills/motion/best-practices/react.md"
+        },
+        {
+          "path": "plugins/motion/skills/motion/codex/index.md",
+          "sha256": "e8cd498864f0c744d872c9d28cc6b4ba84d12c63cbd92c2ae66e2717dbe12b88",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/skills/motion/codex/index.md"
+        },
+        {
+          "path": "plugins/motion/mcp.json",
+          "sha256": "ef867105b43a310330565270201a9dba25882eaf376aa7e9f8392e15b1b856dd",
+          "source_url": "https://github.com/motiondivision/ai-kit/blob/1e424943582cbbdb6e3f410687e39f96451447bb/plugins/motion/mcp.json"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "A local checkout is guidance, not a connected provider account or installed rendering engine",
+    "The selected skill files were read; optional techniques and external referenced element source not fully inspected",
+    "Preview/browser and package readiness must be verified in the environment that executes the project",
+    "No claim that these are every possible video skill or universally best tools"
+  ]
+}
